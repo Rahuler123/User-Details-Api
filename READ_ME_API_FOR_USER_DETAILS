@@ -1,0 +1,56 @@
+API FOR USER DETAILS
+
+
+/*------USER_REGISTRATION------*/
+
+API (POST METHOD)	:	localhost:8080/user/userCreation
+REQUEST BODY		: 	{
+							"name":"Rahul",
+							"email":"rahul23@gmail.com",
+							"password":"Rahul@123",
+							"gender":"Male"
+						}
+RESPONSE 			:	Successfully Created !
+
+
+/*------USER_LOGIN------*/
+
+
+API (POST METHOD)	:	localhost:8080/user/userLogin
+REQUEST BODY		: 	{
+							"email":"rahul23@gmail.com",
+							"password":"Rahul@123"
+						}
+RESPONSE 			:	Welcome Mr.Rahul . Your Email Address is rahul23@gmail.com
+
+
+/*------ALL_USER_DETAILS------*/
+
+
+API (GET METHOD)	:	localhost:8080/user/getAllUsers
+
+RESPONSE 			:	[
+							{
+								"id": 1,
+								"name": "Rahul",
+								"gender": "Male",
+								"email": "rahul23@gmail.com",
+								"password": "Rahul@123"
+							}
+						]
+						
+/*------DELETE_USER_DETAIL_BASED_ON_EMAIL------*/
+
+API (DELETE METHOD)	:	localhost:8080/user/deleteUser/rahul23@gmail.com
+
+RESPONSE 			:	Successfully deleted
+
+
+
+
+
+
+
+
+
+						
